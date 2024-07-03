@@ -3,6 +3,7 @@ import CoverImage from "@/app/components/cover-image";
 import Avatar from "@/app/components/avatar";
 import Date from "@/app/components/date";
 import BodyImage from "./body-image";
+import Link from "next/link";
 import CodeBlock from "@/app/components/code-block";
 import { Post as TPost } from "@/lib/queries";
 
@@ -23,7 +24,9 @@ export default function Post({ post }: { post: TPost }) {
       </div>
 
       <div className="mb-8 sm:mx-0 md:mb-16">
-        <CoverImage title={post._title} url={post.coverImage.url} />
+        <Link href="https://www.youtube.com/watch?v=ZVnjOPwW4ZA">
+          <CoverImage title={post._title} url={post.coverImage.url} />
+        </Link>
       </div>
 
       <div className="mx-auto max-w-2xl">

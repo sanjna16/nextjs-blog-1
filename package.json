@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "basehub dev & next dev",
+    "build": "basehub && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "basehub"
   },
   "dependencies": {
-    "basehub": "3.0.4",
+    "basehub": "^3.2.0",
     "clsx": "2.1.0",
     "date-fns": "3.6.0",
     "geist": "1.2.2",
